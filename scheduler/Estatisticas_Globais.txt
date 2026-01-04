@@ -1,0 +1,16 @@
+===== MODO: FCFS seq =====
+Total Tarefas Executadas: 10
+Turnaround Time Médio: 17.00 segundos
+
+===== MODO: FCFS par =====
+Total Tarefas Executadas: 10
+Turnaround Time Médio: 8.60 segundos
+
+===== MODO: SJF seq =====
+Total Tarefas Executadas: 10
+Turnaround Time Médio: 11.80 segundos
+
+===== MODO: SJF par =====
+Total Tarefas Executadas: 10
+Turnaround Time Médio: 6.50 segundos
+

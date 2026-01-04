@@ -1,0 +1,27 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -g
+
+TARGET = scheduler
+OBJS = scheduler.o functions.o
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
+
+scheduler.o: scheduler.c functions.h
+	$(CC) $(CFLAGS) -c scheduler.c
+
+functions.o: functions.c functions.h
+	$(CC) $(CFLAGS) -c functions.c
+
+clean:
+	rm -f *.o $(TARGET)
+	@echo "Limpeza (build) concluída!"
+
+clean-stats:
+	rm -f Estatisticas_Globais.txt
+	@echo "Limpeza (estatisticas) concluída!"
+
+clean-all: clean clean-stats
+	@echo "Limpeza total concluída!"
